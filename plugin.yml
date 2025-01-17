@@ -1,0 +1,49 @@
+name: SMPControl
+
+author: vinerSAFE
+
+description: enhance your Minecraft experience with our ultimate protection plugin.
+
+main: vinersafe.smpc.Main
+
+website: https://github.com/vinerSAFE
+
+version: 1.1.11
+
+api-version: 1.14
+
+softdepend: [ViaVersion]
+
+commands:
+  smpcontrol:
+    description: coomands of SMPControl
+    usage: /smpcontrol
+    aliases: smpc
+permissions:
+  smpcontrol.*:
+    description: Gives access to all SMPControl commands
+    children:
+      smpcontrol.reload: true
+      smpcontrol.keepxp: true
+      smpcontrol.keepinventory: true
+      smpcontrol.respawn: true
+      smpcontrol.lobbymod: true
+      smpcontrol.location: true
+  smpcontrol.reload:
+    description: reload the config
+    default: op
+  smpcontrol.keepxp:
+    description: keep xp on player death
+    default: op
+  smpcontrol.keepinventory:
+    description: keep items in inventory on player death
+    default: op
+  smpcontrol.location:
+    description: if player death send it location
+    default: op
+  smpcontrol.respawn:
+    description: Skipping the die screen
+    default: op
+  smpcontrol.lobbymod:
+    description: Access lobbymod to do changes
+    default: op

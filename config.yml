@@ -1,0 +1,44 @@
+message:
+#  You need "ViaVersion" to display the join message with the player's version.
+#  If join-global is set to true, it will show the join message in chat and log. If its false, it will show the join message in the console.
+#  Example message: "Playername001 joined with version: 1.17.1"
+   join-global: true
+
+protections:
+#  Protect the server from accidentally destroying farmlands or turtle eggs when a player or entity jumps on them.
+   accident: true
+
+#  Enable deliberate explosions for TNT and BED.
+   deliberately: true
+
+#  Protect the server from destroying or changing blocks by specific mobs like:
+#  "Rabbits, Ravager, Zombie, Zombie-Villager, Sheep, Silverfish, Enderman, Arrow, Trident"
+   mobs: true
+
+#  Protect the server from destroying blocks by any types of explosions like:
+#  "Creeper, Wither, Ender Crystal, Ghast, TNT, Ender Dragon, Respawn anchor"
+   explosions: true
+
+#  Protect blocks from fire burning them.
+   fire: true
+
+#  Keep players' XP after death.
+#  If you want to limit this feature to players, set the permission "smpcontrol.keepxp" and set this value to false.
+   xp: false
+
+#  Keep players' inventories after death.
+#  If you want to limit this feature to players, set the permission "smpcontrol.keepinventory" and set this value to false.
+   inventory: false
+
+optional:
+#  Lobby mod can freeze the server's gameplay features like item dropping or picking up, block breaking or placing and etc.
+#  If you want to modify the lobby mode, set the "smpcontrol.lobbymod" permission.
+   lobby-mod: false
+
+#  Skip the death screen to fix inventory items disappearing after dying.
+#  If you want to limit this feature to players, set the permission "smpcontrol.respawn" and set this value to false.
+   fast-spawn: true
+
+#  sending location of death player.
+#  If you want to limit this feature to players, set the permission "smpcontrol.location" and set this value to false.
+   location: true
